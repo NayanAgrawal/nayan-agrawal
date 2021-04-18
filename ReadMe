@@ -1,0 +1,29 @@
+# Monefy App Automation Testing
+
+##Overview
+This is the test automation for Monefy application mobile on Android platform, which contains a set of automated steps based on Android application
+
+##Explanation of the Automated Scenario
+Record a income, record a expense, then evaluate if income minus expense are equal to balance calculated by application. If so, then, the result is successful, otherwise is failed.
+
+Prerequisites
+Install the latest version of Java and Maven.
+You may need to set your JAVA_HOME.
+Eclipse
+
+#Run
+Configure Monefy maven project in eclipse, Run TestNG.xml from current working directory
+
+
+#Beautiful Console Output
+The console output is more intuitive and better readable as the default one of maven, jUnit, TestNG and Selenium. A colored console output will give you a clear overview about which tests are currently running.
+Logs are saved in project_folder/logs tO view logs in HTML format and text files format 
+
+#Centralized Project run
+All the TestNG test cases can be executed from single file called TestNG.xml
+
+#Reports 
+Extent report is used for test cases status and can be viewed in TestReport folder, also test cases status is available in testNG default report (test-output/emailable-report.html) or HTML logs (log/application.html) from log4j. 
+
+## Parallel execution
+Test cases can be executed parallally from testng.xml by passing thread-count in suite tag

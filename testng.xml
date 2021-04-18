@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Illumnus">
+	<listeners>
+		<listener class-name="n26.monefy.base.TestListener" />
+	</listeners>
+	<test name="Homepage">
+		<classes>
+			<class name="n26.monefy.testCases.TC001_Homepage">
+				<methods>
+					<include name="homePage" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="Income">
+		<classes>
+			<class name="n26.monefy.testCases.TC002_Income">
+				<methods>
+					<include name="incomeCalculation" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="Expense">
+		<classes>
+			<class
+				name="n26.monefy.testCases.TC003_Expense">
+				<methods>
+					<include name="expenseCalculation" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+	

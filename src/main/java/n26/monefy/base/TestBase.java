@@ -68,7 +68,7 @@ public class TestBase {
 		File image = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
 		String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath()
-				+ "/src/main/java/illumnus/application/screenshot/";
+				+ "/src/main/java/n26/monefy/screenshot/";
 
 		String actualImageName = reportDirectory + imageName + "_" + format.format(calander.getTime()) + ".png";
 		File destFile = new File(actualImageName);
@@ -94,5 +94,15 @@ public class TestBase {
 			return false;
 		}
 	}
+	
+	/**
+	 * Method to wait till element is visible
+	 * 
+	 */
+	public void explicatWait(WebDriver driver,WebElement xpathValue) {
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(xpathValue));
+	}
+
 
 }

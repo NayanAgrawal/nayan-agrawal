@@ -29,7 +29,7 @@ public class TC001_Homepage extends TestBase {
 		driver = Capabilities();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, enabled = true)
 	public void homePage() throws IOException, InterruptedException {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -37,8 +37,9 @@ public class TC001_Homepage extends TestBase {
 		child = ExtentTestManager.startTest("Open Moneyfy App", "Open Moneyfy App");
 		child.log(Status.INFO, "Verify Moneyfy App homepage");
 		HomePage hoempage = new HomePage(driver);
-		hoempage.incomeTab();
+		hoempage.commonBase();
 
+		getScreenshot(driver, "homepage");
 		child.log(Status.INFO, "Successfully verified monefy homepage");
 	}
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Monefy]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="n26.monefy.base.TestListener"/>
+  </listeners>
+  <test name="Income(failed)">
+    <classes>
+      <class name="n26.monefy.testCases.TC002_Income">
+        <methods>
+          <include name="incomeCalculation"/>
+          <include name="init"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- n26.monefy.testCases.TC002_Income -->
+      <class name="n26.monefy.testCases.TC001_Homepage">
+        <methods>
+          <include name="endTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- n26.monefy.testCases.TC001_Homepage -->
+      <class name="n26.monefy.testCases.TC004_OpenNavigation">
+        <methods>
+          <include name="init"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- n26.monefy.testCases.TC004_OpenNavigation -->
+      <class name="n26.monefy.testCases.TC003_Expense">
+        <methods>
+          <include name="endTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- n26.monefy.testCases.TC003_Expense -->
+      <class name="n26.monefy.testCases.TC005_Settings">
+        <methods>
+          <include name="init"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- n26.monefy.testCases.TC005_Settings -->
+    </classes>
+  </test> <!-- Income(failed) -->
+</suite> <!-- Failed suite [Monefy] -->

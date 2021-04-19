@@ -39,11 +39,11 @@ public class TC002_Income extends TestBase {
 		child = ExtentTestManager.startTest("Income Calculation", "Income Calculation in Monefy");
 		child.log(Status.INFO, "Add income in monefy");
 		HomePage login = new HomePage(driver);
-		login.incomeTab();
-		
+		login.commonBase();
+
 		IncomeCalculation incomeCalculation = new IncomeCalculation(driver);
 		incomeCalculation.incomeCalculationTab(2, "+", 3);
-		
+
 		child.log(Status.INFO, "Income added successfully in monefy");
 	}
 

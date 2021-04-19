@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Monefy" class="navigator-link">
+              <span class="suite-name border-passed">Monefy</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Monefy" class="navigator-link ">
+                    <span>E:\workspace\monefy\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Monefy" class="navigator-link ">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Monefy" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Monefy" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Monefy" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Monefy" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Monefy" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Monefy" class="hide-methods passed suite-Monefy"> (hide)</a> <!-- hide-methods passed suite-Monefy -->
+                      <a href="#" panel-name="suite-Monefy" class="show-methods passed suite-Monefy"> (show)</a> <!-- show-methods passed suite-Monefy -->
+                    </span>
+                    <div class="method-list-content passed suite-Monefy">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Monefy" title="n26.monefy.testCases.TC003_Expense" class="method navigator-link" hash-for-method="expenseCalculation">expenseCalculation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Monefy" title="n26.monefy.testCases.TC001_Homepage" class="method navigator-link" hash-for-method="homePage">homePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Monefy" title="n26.monefy.testCases.TC002_Income" class="method navigator-link" hash-for-method="incomeCalculation">incomeCalculation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Monefy" title="n26.monefy.testCases.TC006_NewTransfer" class="method navigator-link" hash-for-method="newTransfer">newTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Monefy" title="n26.monefy.testCases.TC004_OpenNavigation" class="method navigator-link" hash-for-method="verifyOpenNavigation">verifyOpenNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Monefy" title="n26.monefy.testCases.TC005_Settings" class="method navigator-link" hash-for-method="verifySettings">verifySettings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Monefy -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Monefy" class="panel Monefy">
+          <div class="suite-Monefy-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">n26.monefy.testCases.TC002_Income</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="incomeCalculation">
+                  </a> <!-- incomeCalculation -->
+                  <span class="method-name">incomeCalculation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Monefy-class-passed -->
+          <div class="suite-Monefy-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">n26.monefy.testCases.TC004_OpenNavigation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOpenNavigation">
+                  </a> <!-- verifyOpenNavigation -->
+                  <span class="method-name">verifyOpenNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Monefy-class-passed -->
+          <div class="suite-Monefy-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">n26.monefy.testCases.TC001_Homepage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePage">
+                  </a> <!-- homePage -->
+                  <span class="method-name">homePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Monefy-class-passed -->
+          <div class="suite-Monefy-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">n26.monefy.testCases.TC003_Expense</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="expenseCalculation">
+                  </a> <!-- expenseCalculation -->
+                  <span class="method-name">expenseCalculation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Monefy-class-passed -->
+          <div class="suite-Monefy-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">n26.monefy.testCases.TC005_Settings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySettings">
+                  </a> <!-- verifySettings -->
+                  <span class="method-name">verifySettings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Monefy-class-passed -->
+          <div class="suite-Monefy-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">n26.monefy.testCases.TC006_NewTransfer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="newTransfer">
+                  </a> <!-- newTransfer -->
+                  <span class="method-name">newTransfer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Monefy-class-passed -->
+        </div> <!-- panel Monefy -->
+        <div panel-name="test-xml-Monefy" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\workspace\monefy\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Monefy&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;n26.monefy.base.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Homepage&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;n26.monefy.testCases.TC001_Homepage&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;homePage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- n26.monefy.testCases.TC001_Homepage --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Homepage --&gt;
+  &lt;test name=&quot;Income&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;n26.monefy.testCases.TC002_Income&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;incomeCalculation&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- n26.monefy.testCases.TC002_Income --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Income --&gt;
+  &lt;test name=&quot;Expense&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;n26.monefy.testCases.TC003_Expense&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;expenseCalculation&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- n26.monefy.testCases.TC003_Expense --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Expense --&gt;
+  &lt;test name=&quot;Open navigation&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;n26.monefy.testCases.TC004_OpenNavigation&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyOpenNavigation&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- n26.monefy.testCases.TC004_OpenNavigation --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Open navigation --&gt;
+  &lt;test name=&quot;Settings&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;n26.monefy.testCases.TC005_Settings&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifySettings&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- n26.monefy.testCases.TC005_Settings --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Settings --&gt;
+  &lt;test name=&quot;New Transfer&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;n26.monefy.testCases.TC006_NewTransfer&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;newTransfer&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- n26.monefy.testCases.TC006_NewTransfer --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- New Transfer --&gt;
+&lt;/suite&gt; &lt;!-- Monefy --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Monefy" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Monefy</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Homepage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Income (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Expense (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Open navigation (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Settings (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">New Transfer (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Monefy" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Monefy</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Monefy" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Monefy</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Monefy');
+function tableData_Monefy() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'incomeCalculation')
+data.setCell(0, 2, 'n26.monefy.testCases.TC002_Income')
+data.setCell(0, 3, 47648);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyOpenNavigation')
+data.setCell(1, 2, 'n26.monefy.testCases.TC004_OpenNavigation')
+data.setCell(1, 3, 30865);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'expenseCalculation')
+data.setCell(2, 2, 'n26.monefy.testCases.TC003_Expense')
+data.setCell(2, 3, 15231);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'newTransfer')
+data.setCell(3, 2, 'n26.monefy.testCases.TC006_NewTransfer')
+data.setCell(3, 3, 8934);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifySettings')
+data.setCell(4, 2, 'n26.monefy.testCases.TC005_Settings')
+data.setCell(4, 3, 6301);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'homePage')
+data.setCell(5, 2, 'n26.monefy.testCases.TC001_Homepage')
+data.setCell(5, 3, 3596);
+window.suiteTableData['Monefy']= { tableData: data, tableDiv: 'times-div-Monefy'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Monefy">
+              </div> <!-- times-div-Monefy -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Monefy" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Monefy</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">homePage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\homepage_19_04_2021_12_00_18.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\homepage_19_04_2021_12_00_18.png' height='100' width ='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">incomeCalculation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\incomeCalculated_19_04_2021_12_01_36.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\incomeCalculated_19_04_2021_12_01_36.png' height='100' width ='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">expenseCalculation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\expenseCalculated_19_04_2021_12_02_14.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\expenseCalculated_19_04_2021_12_02_14.png' height='100' width ='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyOpenNavigation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\openNavigation_19_04_2021_12_03_20.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\openNavigation_19_04_2021_12_03_20.png' height='100' width ='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySettings</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\settings_19_04_2021_12_03_54.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\settings_19_04_2021_12_03_54.png' height='100' width ='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">newTransfer</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\NewTransfer_19_04_2021_12_04_26.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\NewTransfer_19_04_2021_12_04_26.png' height='100' width ='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Monefy" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Monefy" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">n26.monefy.testCases.TC001_Homepage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">homePage</span>
+                <span class="method-start">18194 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">21792 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">n26.monefy.testCases.TC002_Income</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">24711 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">incomeCalculation</span>
+                <span class="method-start">52401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">100052 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">n26.monefy.testCases.TC003_Expense</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">101830 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">expenseCalculation</span>
+                <span class="method-start">123589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">138822 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">n26.monefy.testCases.TC004_OpenNavigation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">141136 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyOpenNavigation</span>
+                <span class="method-start">173241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">204111 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">n26.monefy.testCases.TC005_Settings</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">206288 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySettings</span>
+                <span class="method-start">231916 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">238221 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">n26.monefy.testCases.TC006_NewTransfer</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">240575 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">newTransfer</span>
+                <span class="method-start">261369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">270307 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

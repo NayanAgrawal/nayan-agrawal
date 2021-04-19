@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Illumnus">
+<suite name="Monefy">
 	<listeners>
 		<listener class-name="n26.monefy.base.TestListener" />
 	</listeners>
@@ -32,5 +32,36 @@
 			</class>
 		</classes>
 	</test> <!-- Test -->
+	<test name="Open navigation">
+		<classes>
+			<class
+				name="n26.monefy.testCases.TC004_OpenNavigation">
+				<methods>
+					<include name="verifyOpenNavigation" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="Settings">
+		<classes>
+			<class
+				name="n26.monefy.testCases.TC005_Settings">
+				<methods>
+					<include name="verifySettings" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="New Transfer">
+		<classes>
+			<class
+				name="n26.monefy.testCases.TC006_NewTransfer">
+				<methods>
+					<include name="newTransfer" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->
 	

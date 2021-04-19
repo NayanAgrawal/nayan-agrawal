@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\homepage_19_04_2021_12_00_18.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\homepage_19_04_2021_12_00_18.png' height='100' width ='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\incomeCalculated_19_04_2021_12_01_36.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\incomeCalculated_19_04_2021_12_01_36.png' height='100' width ='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\expenseCalculated_19_04_2021_12_02_14.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\expenseCalculated_19_04_2021_12_02_14.png' height='100' width ='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\openNavigation_19_04_2021_12_03_20.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\openNavigation_19_04_2021_12_03_20.png' height='100' width ='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\settings_19_04_2021_12_03_54.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\settings_19_04_2021_12_03_54.png' height='100' width ='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\NewTransfer_19_04_2021_12_04_26.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\NewTransfer_19_04_2021_12_04_26.png' height='100' width ='100'/></a>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-04-19T06:29:56Z" name="Monefy" finished-at="2021-04-19T06:34:37Z" duration-ms="280961">
+    <groups>
+    </groups>
+    <test started-at="2021-04-19T06:29:56Z" name="Homepage" finished-at="2021-04-19T06:30:20Z" duration-ms="23773">
+      <class name="n26.monefy.testCases.TC001_Homepage">
+        <test-method is-config="true" signature="init()[pri:0, instance:n26.monefy.testCases.TC001_Homepage@6f96c77]" started-at="2021-04-19T11:59:56Z" name="init" finished-at="2021-04-19T12:00:15Z" duration-ms="18194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="homePage()[pri:1, instance:n26.monefy.testCases.TC001_Homepage@6f96c77]" started-at="2021-04-19T12:00:15Z" name="homePage" finished-at="2021-04-19T12:00:18Z" duration-ms="3596" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\homepage_19_04_2021_12_00_18.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\homepage_19_04_2021_12_00_18.png' height='100' width ='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:n26.monefy.testCases.TC001_Homepage@6f96c77]" started-at="2021-04-19T12:00:18Z" name="endTest" finished-at="2021-04-19T12:00:20Z" duration-ms="1960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- n26.monefy.testCases.TC001_Homepage -->
+    </test> <!-- Homepage -->
+    <test started-at="2021-04-19T06:30:21Z" name="Income" finished-at="2021-04-19T06:31:38Z" duration-ms="76903">
+      <class name="n26.monefy.testCases.TC002_Income">
+        <test-method is-config="true" signature="init()[pri:0, instance:n26.monefy.testCases.TC002_Income@6580cfdd]" started-at="2021-04-19T12:00:21Z" name="init" finished-at="2021-04-19T12:00:49Z" duration-ms="27690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="incomeCalculation()[pri:1, instance:n26.monefy.testCases.TC002_Income@6580cfdd]" started-at="2021-04-19T12:00:49Z" name="incomeCalculation" finished-at="2021-04-19T12:01:36Z" duration-ms="47648" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\incomeCalculated_19_04_2021_12_01_36.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\incomeCalculated_19_04_2021_12_01_36.png' height='100' width ='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- incomeCalculation -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:n26.monefy.testCases.TC002_Income@6580cfdd]" started-at="2021-04-19T12:01:36Z" name="endTest" finished-at="2021-04-19T12:01:38Z" duration-ms="1560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- n26.monefy.testCases.TC002_Income -->
+    </test> <!-- Income -->
+    <test started-at="2021-04-19T06:31:38Z" name="Expense" finished-at="2021-04-19T06:32:17Z" duration-ms="39089">
+      <class name="n26.monefy.testCases.TC003_Expense">
+        <test-method is-config="true" signature="init()[pri:0, instance:n26.monefy.testCases.TC003_Expense@30ee2816]" started-at="2021-04-19T12:01:38Z" name="init" finished-at="2021-04-19T12:02:00Z" duration-ms="21759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="expenseCalculation()[pri:1, instance:n26.monefy.testCases.TC003_Expense@30ee2816]" started-at="2021-04-19T12:02:00Z" name="expenseCalculation" finished-at="2021-04-19T12:02:15Z" duration-ms="15231" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\expenseCalculated_19_04_2021_12_02_14.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\expenseCalculated_19_04_2021_12_02_14.png' height='100' width ='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- expenseCalculation -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:n26.monefy.testCases.TC003_Expense@30ee2816]" started-at="2021-04-19T12:02:15Z" name="endTest" finished-at="2021-04-19T12:02:17Z" duration-ms="2093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- n26.monefy.testCases.TC003_Expense -->
+    </test> <!-- Expense -->
+    <test started-at="2021-04-19T06:32:17Z" name="Open navigation" finished-at="2021-04-19T06:33:22Z" duration-ms="64863">
+      <class name="n26.monefy.testCases.TC004_OpenNavigation">
+        <test-method is-config="true" signature="init()[pri:0, instance:n26.monefy.testCases.TC004_OpenNavigation@636be97c]" started-at="2021-04-19T12:02:17Z" name="init" finished-at="2021-04-19T12:02:50Z" duration-ms="32105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="verifyOpenNavigation()[pri:1, instance:n26.monefy.testCases.TC004_OpenNavigation@636be97c]" started-at="2021-04-19T12:02:50Z" name="verifyOpenNavigation" finished-at="2021-04-19T12:03:20Z" duration-ms="30865" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\openNavigation_19_04_2021_12_03_20.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\openNavigation_19_04_2021_12_03_20.png' height='100' width ='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyOpenNavigation -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:n26.monefy.testCases.TC004_OpenNavigation@636be97c]" started-at="2021-04-19T12:03:20Z" name="endTest" finished-at="2021-04-19T12:03:22Z" duration-ms="1886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- n26.monefy.testCases.TC004_OpenNavigation -->
+    </test> <!-- Open navigation -->
+    <test started-at="2021-04-19T06:33:23Z" name="Settings" finished-at="2021-04-19T06:33:57Z" duration-ms="34022">
+      <class name="n26.monefy.testCases.TC005_Settings">
+        <test-method is-config="true" signature="init()[pri:0, instance:n26.monefy.testCases.TC005_Settings@4facf68f]" started-at="2021-04-19T12:03:23Z" name="init" finished-at="2021-04-19T12:03:48Z" duration-ms="25628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="verifySettings()[pri:1, instance:n26.monefy.testCases.TC005_Settings@4facf68f]" started-at="2021-04-19T12:03:48Z" name="verifySettings" finished-at="2021-04-19T12:03:55Z" duration-ms="6301" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\settings_19_04_2021_12_03_54.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\settings_19_04_2021_12_03_54.png' height='100' width ='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySettings -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:n26.monefy.testCases.TC005_Settings@4facf68f]" started-at="2021-04-19T12:03:55Z" name="endTest" finished-at="2021-04-19T12:03:57Z" duration-ms="2086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- n26.monefy.testCases.TC005_Settings -->
+    </test> <!-- Settings -->
+    <test started-at="2021-04-19T06:33:57Z" name="New Transfer" finished-at="2021-04-19T06:34:37Z" duration-ms="40369">
+      <class name="n26.monefy.testCases.TC006_NewTransfer">
+        <test-method is-config="true" signature="init()[pri:0, instance:n26.monefy.testCases.TC006_NewTransfer@72f926e6]" started-at="2021-04-19T12:03:57Z" name="init" finished-at="2021-04-19T12:04:18Z" duration-ms="20794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="newTransfer()[pri:1, instance:n26.monefy.testCases.TC006_NewTransfer@72f926e6]" started-at="2021-04-19T12:04:18Z" name="newTransfer" finished-at="2021-04-19T12:04:27Z" duration-ms="8934" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href= 'E:\workspace\monefy\src\main\java\n26\monefy\screenshot\NewTransfer_19_04_2021_12_04_26.png'> <img src='E:\workspace\monefy\src\main\java\n26\monefy\screenshot\NewTransfer_19_04_2021_12_04_26.png' height='100' width ='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- newTransfer -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:n26.monefy.testCases.TC006_NewTransfer@72f926e6]" started-at="2021-04-19T12:04:27Z" name="endTest" finished-at="2021-04-19T12:04:37Z" duration-ms="10635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- n26.monefy.testCases.TC006_NewTransfer -->
+    </test> <!-- New Transfer -->
+  </suite> <!-- Monefy -->
+</testng-results>

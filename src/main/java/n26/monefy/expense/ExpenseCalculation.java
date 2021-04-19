@@ -11,30 +11,34 @@ import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import n26.monefy.base.ConfigFileReader;
-import n26.monefy.testCases.TC002_Income;
+import n26.monefy.testCases.TC003_Expense;
 
-public class ExpenseCalculation extends TC002_Income {
+/**
+ * Add new expense in Monefy.
+ *
+ * @author Nayan Agrawal
+ * @version 1.0
+ * @since 2021-04-19
+ */
+public class ExpenseCalculation extends TC003_Expense {
 
 	public AndroidDriver<AndroidElement> driver;
-	ConfigFileReader readValue;
-
+	
 	@FindBy(id = "com.monefy.app.lite:id/expense_button_title")
 	public WebElement expenseButton;
-	
+
 	@FindBy(id = "com.monefy.app.lite:id/keyboard_action_button")
 	public WebElement chooseCategoryButton;
-	
+
 	@FindBy(id = "com.monefy.app.lite:id/textViewNote")
 	public WebElement textViewNote;
 
 	@FindBy(xpath = "//android.widget.TextView[@text='Clothes']")
 	public WebElement expenseType;
-	
+
 	@FindBy(id = "com.monefy.app.lite:id/balance_amount")
 	public WebElement finalBalanceAmount;
-	
-	
+
 	@SuppressWarnings("unchecked")
 	public ExpenseCalculation(@SuppressWarnings("rawtypes") AndroidDriver driver) {
 		this.driver = driver;
@@ -42,8 +46,9 @@ public class ExpenseCalculation extends TC002_Income {
 	}
 
 	/**
-	 * Add new expense in Monefy
-	 * 
+	 * Calculate expense in Monefy.
+	 *
+	 * @param firstNumber, operator, secondNumber
 	 * @throws InterruptedException
 	 * @throws IOException
 	 * @throws AWTException
@@ -54,7 +59,7 @@ public class ExpenseCalculation extends TC002_Income {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
 		expenseButton.click();
-		
+
 		String firstNumberValue = "//*[@package='com.monefy.app.lite'][@class='android.widget.Button'][@text='"
 				+ firstNumber + "']";
 		driver.findElement(By.xpath(firstNumberValue)).click();
@@ -71,17 +76,17 @@ public class ExpenseCalculation extends TC002_Income {
 				+ "']";
 		driver.findElement(By.xpath(resultOperator)).click();
 
-		Thread.sleep(5000);
+		explicatWait(driver, textViewNote);
 
 		textViewNote.sendKeys("This is for new Car");
-		
+
 		chooseCategoryButton.click();
-		
+
 		expenseType.click();
-		
+
 		System.out.println(finalBalanceAmount.getText());
-		
-		
+
+		getScreenshot(driver, "expenseCalculated");
 	}
 
 }

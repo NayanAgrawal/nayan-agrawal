@@ -25,5 +25,5 @@ All the TestNG test cases can be executed from single file called TestNG.xml
 #Reports 
 Extent report is used for test cases status and can be viewed in TestReport folder, also test cases status is available in testNG default report (test-output/emailable-report.html) or HTML logs (log/application.html) from log4j. 
 
-## Parallel execution
-Test cases can be executed parallally from testng.xml by passing thread-count in suite tag
+## Screenshots
+Screenshots is captured during test case execution.

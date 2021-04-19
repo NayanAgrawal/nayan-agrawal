@@ -11,13 +11,18 @@ import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import n26.monefy.base.ConfigFileReader;
 import n26.monefy.testCases.TC002_Income;
 
+/**
+ * Add new income in Monefy.
+ *
+ * @author Nayan Agrawal
+ * @version 1.0
+ * @since 2021-04-19
+ */
 public class IncomeCalculation extends TC002_Income {
 
 	public AndroidDriver<AndroidElement> driver;
-	ConfigFileReader readValue;
 
 	@FindBy(id = "com.monefy.app.lite:id/income_button_title")
 	public WebElement incomeButton;
@@ -43,6 +48,7 @@ public class IncomeCalculation extends TC002_Income {
 	/**
 	 * Add new income in Monefy
 	 * 
+	 * @param firstNumber, operator, secondNumber
 	 * @throws InterruptedException
 	 * @throws IOException
 	 * @throws AWTException
@@ -70,7 +76,7 @@ public class IncomeCalculation extends TC002_Income {
 				+ "']";
 		driver.findElement(By.xpath(resultOperator)).click();
 		
-		Thread.sleep(5000);
+		explicatWait(driver, textViewNote);
 
 		textViewNote.sendKeys("This is from salary");
 		
@@ -79,6 +85,8 @@ public class IncomeCalculation extends TC002_Income {
 		incomeType.click();
 
 		System.out.println(finalBalanceAmount.getText());
+		
+		getScreenshot(driver, "incomeCalculated");
 	}
 
 }

@@ -16,6 +16,7 @@ import io.appium.java_client.android.AndroidElement;
 import n26.monefy.base.ExtentTestManager;
 import n26.monefy.base.TestBase;
 import n26.monefy.expense.ExpenseCalculation;
+import n26.monefy.homepage.HomePage;
 
 public class TC003_Expense extends TestBase {
 
@@ -38,6 +39,9 @@ public class TC003_Expense extends TestBase {
 		child = ExtentTestManager.startTest("Expense calculation", "Expense calculation in monefy");
 		child.log(Status.INFO, "Add expense in moneyfy");
 
+		HomePage hoempage = new HomePage(driver);
+		hoempage.commonBase();
+		
 		ExpenseCalculation expenseCalculation = new ExpenseCalculation(driver);
 		expenseCalculation.expenseCalculationTab(1, "+", 1);
 		
